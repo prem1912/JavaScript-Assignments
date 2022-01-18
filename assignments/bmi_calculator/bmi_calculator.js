@@ -4,7 +4,7 @@ function BMICalculator(mass, height) {
     if (typeof mass === 'number' && typeof mass === 'number' && mass > 0 && height > 0) {
         return mass / (height * height);
     } else {
-        return "Invalid Input";
+        return "INVALID INPUT";
     }
 }
 
