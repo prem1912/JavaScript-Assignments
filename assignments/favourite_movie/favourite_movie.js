@@ -8,7 +8,7 @@ function favouriteMovie(operation, movie) {
     else {
         movies.pop(movie);
     }
-    return movies
+    return movies;
 }
 
 module.exports = favouriteMovie;
