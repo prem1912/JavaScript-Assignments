@@ -6,9 +6,9 @@ function favouriteMovie(operation, movie) {
         movies.push(movie);
     }
     else {
-        movies.pop();
+        movies.pop(movie);
     }
-    return movies;
+    return movies
 }
 
 module.exports = favouriteMovie;
