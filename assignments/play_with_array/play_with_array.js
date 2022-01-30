@@ -7,10 +7,17 @@ function getEven(arr) {
 
         Write you code below
     */
-
+    var evenNumber = [];
+    for(var i=0;i<=arr.length;i++){
+        if(arr[i]%2==0){
+            evenNumber.push(arr[i]);
+        }
+    }
+    return evenNumber;
 }
 
 function multiplyByN(arr, n) {
+
     /* 
         Return an array whose elements are multiplied by n
         Example
@@ -18,6 +25,12 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
+    newArr = [];
+    for(var i = 0;i < arr.length; i++){
+        arr[i] *= n;
+        newArr.push(arr[i]);
+    }
+    return newArr;
 }
 
 function removeNthElement(arr, n) {
@@ -28,6 +41,12 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
+    for(var i=0;i<arr.length;i++){
+        if(i===n){
+            arr.splice(n,1);
+        }
+    }
+    return arr;
 }
 
 module.exports = {
